@@ -11,12 +11,8 @@ export default function VideoGrid({
   placeholderStyle,
   labelsOffset_px = 0,
   participantDescs,
-  itemInterval_gu = -1,
-  outerPadding_gu = -1,
 }) {
   const totalNumItems = participantDescs.length;
-  itemInterval_gu = Math.max(-1, itemInterval_gu);
-  outerPadding_gu = Math.max(-1, outerPadding_gu);
 
   function makeItem({
     index,
@@ -29,15 +25,7 @@ export default function VideoGrid({
   }) {
     key = 'videogriditem_' + key;
 
-    const itemLayout = [
-      layoutFuncs.grid,
-      {
-        index,
-        total: totalNumItems,
-        innerMargin_gu: itemInterval_gu,
-        outerMargin_gu: outerPadding_gu,
-      },
-    ];
+    const itemLayout = [layoutFuncs.grid, { index, total: totalNumItems }];
 
     let participantLabel;
     if (showLabels) {

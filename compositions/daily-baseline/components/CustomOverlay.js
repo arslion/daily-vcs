@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Image } from '#vcs-react/components';
 
 /*
   This component is intentionally empty.
@@ -7,5 +8,9 @@ import * as React from 'react';
 */
 
 export default function CustomOverlay() {
-  return null;
+  const src = 'test_square';
+  const opacity = 0.5;
+  return <Image src={src} blend={{ opacity }} />;
+
+  // return null;
 }

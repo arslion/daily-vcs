@@ -5,7 +5,7 @@ import { useParams, useVideoTime, useActiveVideo } from '#vcs-react/hooks';
 // -- the control interface exposed by this composition --
 export const compositionInterface = {
   displayMeta: {
-    name: 'Hello Daily',
+    name: 'Bikter\'s Live Stream Test',
     description: 'An example composition in a single file',
   },
   params: [
@@ -37,7 +37,7 @@ export const compositionInterface = {
     {
       id: 'demoText',
       type: 'text',
-      defaultValue: 'Hello world',
+      defaultValue: 'Bikter\'s Live Stream',
     },
   ],
 };
@@ -170,7 +170,7 @@ function TimedExampleGraphics({
   const textPad_px = 20;
 
   const boxStyle = {
-    fillColor: 'rgba(50, 70, 255, 0.7)',
+    fillColor: 'rgba(32, 52, 57, 0.6)',
     //strokeColor: 'rgba(255, 255, 255, 0.8)',
     //strokeWidth_px: 4,
   };

@@ -151,7 +151,7 @@ export default function wwwClientConfig(env) {
 
       // dev server
       new HtmlWebpackPlugin({
-        title: 'Daily VCS devrig',
+        title: 'Live Streaming',
         template: 'devrig/vcs-rig.html',
         filename: useCompFilename ? `${compFilenameBase}.html` : 'index.html',
       }),
